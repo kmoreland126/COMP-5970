@@ -1,6 +1,5 @@
-COMP 4200 - Formal Languages
-University
+# COMP 5970 - Mobile App Development
+## University
 Auburn University
-
-Professor
-Vishalini Laguduva Ramnath
+## Professor
+Dr. Abhishek Jariwala
