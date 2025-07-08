@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="Tox-Qo-2oX">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="jXU-Zp-ggu">
+                                <rect key="frame" x="59" y="335" width="275" height="182"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuestionLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYK-OI-CxA">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="41"/>
+                                        <color key="backgroundColor" red="0.89000000000000001" green="0.88934867490000002" blue="0.88498062879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Zk7-dR-v2e">
+                                        <rect key="frame" x="0.0" y="141" width="275" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97A-cQ-uwe">
+                                                <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="41"/>
+                                                <color key="backgroundColor" red="0.89000000000000001" green="0.88934867490000002" blue="0.88498062879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.84313726430000002" green="0.27450981740000002" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button1" titleAlignment="center"/>
+                                                <connections>
+                                                    <action selector="answerSubmitted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2f4-By-ilK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3d-JG-a57">
+                                                <rect key="frame" x="167.66666666666663" y="0.0" width="107.33333333333337" height="41"/>
+                                                <color key="backgroundColor" red="0.89000000000000001" green="0.88934867490000002" blue="0.88498062879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.84313726430000002" green="0.27450981740000002" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button2" titleAlignment="center"/>
+                                                <connections>
+                                                    <action selector="answerSubmitted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SPD-Os-uI0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8893486748539029" blue="0.88498062881609663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.25427395272548825" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jXU-Zp-ggu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="59" id="1kW-Za-Tkb"/>
+                            <constraint firstAttribute="bottom" secondItem="Tox-Qo-2oX" secondAttribute="bottom" id="GB1-8B-oJF"/>
+                            <constraint firstItem="Tox-Qo-2oX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="XrF-AY-Gqc"/>
+                            <constraint firstItem="jXU-Zp-ggu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="irC-A3-rf4"/>
+                            <constraint firstItem="Tox-Qo-2oX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kVX-wq-0kc"/>
+                            <constraint firstItem="Tox-Qo-2oX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="v2x-jC-8wF"/>
+                            <constraint firstItem="jXU-Zp-ggu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zeR-et-gwR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Button1" destination="97A-cQ-uwe" id="qmz-GL-hE3"/>
+                        <outlet property="Button2" destination="u3d-JG-a57" id="qK2-GN-ALX"/>
+                        <outlet property="QuestionLabel" destination="cYK-OI-CxA" id="zJY-U1-8dN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" width="1200" height="952"/>
+    </resources>
+</document>
